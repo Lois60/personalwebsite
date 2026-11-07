@@ -217,6 +217,16 @@ form.req { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:
 .prod-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 18px; padding-top: 22px; border-top: 1.5px solid var(--ink); }
 .prod .price { font: 800 clamp(28px, 2.6vw, 34px)/1 var(--display); letter-spacing: -0.05em; color: var(--ink); }
 .prod .price small { font: 500 14.5px/1.3 var(--text); letter-spacing: 0; color: var(--muted); margin-left: 8px; }
+.corp { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); margin-top: 72px; background: var(--tint); border: 1px solid var(--line); }
+.corp-img { position: relative; min-height: 380px; overflow: hidden; background: #141210; }
+.corp-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 55%; }
+.corp-body { display: grid; align-content: center; gap: 12px; padding: clamp(28px, 4vw, 56px); }
+.corp h3 { font-size: clamp(28px, 2.8vw, 38px); letter-spacing: -0.045em; line-height: 1.05; }
+.corp .sub { font: 600 18px/1.4 var(--display); letter-spacing: -0.02em; }
+.corp p { color: var(--muted); max-width: 52ch; }
+.corp .sub { color: var(--ink); }
+.corp-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 16px; padding-top: 22px; border-top: 1.5px solid var(--ink); }
+.corp-mail { font: 700 15px/1.3 var(--display); letter-spacing: -0.01em; user-select: all; }
 .which { margin-top: 44px; text-align: center; color: var(--muted); }
 .which strong { color: var(--ink); }
 
@@ -283,6 +293,8 @@ form.req { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:
   .belief-card { padding: 44px var(--gutter-r) 8px var(--gutter-l); }
   .about-photo { aspect-ratio: 4 / 4; }
   .prods { gap: 56px; }
+  .corp { grid-template-columns: minmax(0, 1fr); }
+  .corp-img { min-height: 0; aspect-ratio: 16 / 11; }
   .belief-more div, .belief-more div + div { padding: 28px 0 0; border-left: 0; }
   .belief-more div + div { margin-top: 28px; border-top: 1px solid var(--line); }
   .closing-copy { padding-bottom: 0; }
@@ -524,6 +536,18 @@ form.req { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:
         </article>
       </div>
       <p class="which"><strong>Not sure which one?</strong> Start with the guide if you are still learning to sell. Book the call if you have been selling for a while and cannot see what is going wrong.</p>
+      <article class="corp">
+        <div class="corp-img"><img src="assets/tbc26-crowd.webp" width="1400" height="1120" alt="Attendees taking notes at The Big Conference 2026"><span class="tag">For organisations</span></div>
+        <div class="corp-body">
+          <h3>Corporate sales training</h3>
+          <p class="sub">I train your team to sell.</p>
+          <p>I train your sales team, and anyone who speaks to your customers, to sell your business with one clear voice. We cover how to communicate value, handle objections, negotiate and follow up, so your whole organisation sells the same way.</p>
+          <div class="corp-foot">
+            <a class="btn btn-gold" href="mailto:loisugbe@gmail.com?subject=Corporate%20sales%20training%20enquiry">Email me about training <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <span class="corp-mail">loisugbe@gmail.com</span>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -578,6 +602,7 @@ form.req { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:
           <li><a href="#speak-form">Book me to speak</a></li>
           <li><a href="https://selfany.com/thesalesconversionguide" target="_blank" rel="noopener">The Sales Conversion Guide</a></li>
           <li><a href="https://selfany.com/salesclaritycall" target="_blank" rel="noopener">Sales Clarity Call</a></li>
+          <li><a href="mailto:loisugbe@gmail.com?subject=Corporate%20sales%20training%20enquiry">Corporate sales training</a></li>
         </ul>
       </div>
       <div>
